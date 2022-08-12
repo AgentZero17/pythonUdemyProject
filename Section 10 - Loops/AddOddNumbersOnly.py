@@ -1,18 +1,17 @@
 from random import choice, randint
-number = randint(10, 100)
+number = randint(0, 1000)
 number = int(number)
 
 
-sum = 0
-sumofEven = 0
+sum_ofOdds = 0
+sum_ofEven = 0
 print(f"All odd numbers from 0 - {number} ")
 
 for num in range(number+1):
     if num % 2 == 1:
-        sum = sum + num
+        sum_ofOdds = sum_ofOdds + num
     else:
-        sumofEven = sumofEven + num
+        sum_ofEven = sum_ofEven + num
 
-print(f"Sum of odd numbers  between 0 - {number} is : {sum}")
-print(f"Sum of even numbers  between 0 - {number} is : {sumofEven}")
-
+print(f"Sum of odd numbers  between 0 - {number} is : {sum_ofOdds}")
+print(f"Sum of even numbers  between 0 - {number} is : {sum_ofEven}")
