@@ -30,9 +30,10 @@ if sick_days:
         print(f"You are calling sick today. You have {sick_days} sick days remaining")
     else:
         print(f"Kinda sick:{kinda_sick}")
-        print(f"Hate your job:{hate_your_job}")
+        print(f"Hate your job:{hate_your_job}\n")
 
         print(f"You are not calling off today.\n")
+        sick_days = sick_days - 1
 
 else:
     calling_in_sick = False
